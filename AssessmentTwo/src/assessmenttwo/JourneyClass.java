@@ -9,15 +9,14 @@ public class JourneyClass
     
     public JourneyClass(int hiddenJourney)
     {
-          this.travelledJourney[0] = hiddenJourney;     
+          this.travelledJourney[0] = hiddenJourney; 
     }
     
-    void SetJourney(int distance)
+    void SetKm(int distance)
     {
         travelledJourney[0] = distance;
     }
-    
-    int GetJourney()
+    int GetKm()
     {
        return travelledJourney[0]; 
     }
