@@ -5,19 +5,18 @@ public class JourneyClass
     private int hiddenJourney = 0;
     //Defaults
     
-    int[] travelledJourney = new int[1];
-    
     public JourneyClass(int hiddenJourney)
     {
-          this.travelledJourney[0] = hiddenJourney; 
+       hiddenJourney = hiddenJourney;
     }
     
     void SetKm(int distance)
     {
-        travelledJourney[0] = distance;
+        hiddenJourney = distance;
     }
+    
     int GetKm()
     {
-       return travelledJourney[0]; 
+       return hiddenJourney; 
     }
 }

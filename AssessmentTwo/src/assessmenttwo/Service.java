@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package assessmenttwo;
 
-/**
- *
- * @author 041114567
- */
-public class Service {
+public class Service
+{
+    private boolean hiddenService = false; //Default
     
+    public Service (boolean hiddenService)
+    {
+        hiddenService = hiddenService;
+    }
+    
+    void SetCheck(boolean YesNo)
+    {
+        hiddenService = YesNo;
+    }
+    
+    boolean GetCheck()
+    {
+        return hiddenService; 
+    }
 }
